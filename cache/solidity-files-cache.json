@@ -1,0 +1,2313 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "build_infos": "out/build-info",
+    "sources": "src",
+    "tests": "test",
+    "scripts": "script",
+    "libraries": [
+      "lib"
+    ]
+  },
+  "files": {
+    "lib/forge-std/src/Base.sol": {
+      "lastModificationDate": 1697125666590,
+      "contentHash": "ee13c050b1914464f1d3f90cde90204b",
+      "sourceName": "lib/forge-std/src/Base.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "CommonBase": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "Base.sol/CommonBase.json"
+        },
+        "ScriptBase": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "Base.sol/ScriptBase.json"
+        },
+        "TestBase": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "Base.sol/TestBase.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Script.sol": {
+      "lastModificationDate": 1697125666590,
+      "contentHash": "ba325c778a7da8a21c2136aa32763c14",
+      "sourceName": "lib/forge-std/src/Script.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/forge-std/src/safeconsole.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "Script": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "Script.sol/Script.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdChains.sol": {
+      "lastModificationDate": 1697125666590,
+      "contentHash": "b0324b2e5a11948f852032aa293b3a05",
+      "sourceName": "lib/forge-std/src/StdChains.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "StdChains": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdChains.sol/StdChains.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdCheats.sol": {
+      "lastModificationDate": 1697125666594,
+      "contentHash": "d984e2c76dae07bac1e292af2a5d4fd1",
+      "sourceName": "lib/forge-std/src/StdCheats.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console2.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "StdCheats": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdCheats.sol/StdCheats.json"
+        },
+        "StdCheatsSafe": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdCheats.sol/StdCheatsSafe.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdJson.sol": {
+      "lastModificationDate": 1697125666594,
+      "contentHash": "a341308627b7eeab7589534daad58186",
+      "sourceName": "lib/forge-std/src/StdJson.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.0, <0.9.0",
+      "artifacts": {
+        "stdJson": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdJson.sol/stdJson.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdMath.sol": {
+      "lastModificationDate": 1697125666594,
+      "contentHash": "9da8f453eba6bb98f3d75bc6822bfb29",
+      "sourceName": "lib/forge-std/src/StdMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "stdMath": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdMath.sol/stdMath.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdStorage.sol": {
+      "lastModificationDate": 1697125666594,
+      "contentHash": "abd6f3379e6e2a7979b18abc21aea0c1",
+      "sourceName": "lib/forge-std/src/StdStorage.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "stdStorage": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdStorage.sol/stdStorage.json"
+        },
+        "stdStorageSafe": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdStorage.sol/stdStorageSafe.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdStyle.sol": {
+      "lastModificationDate": 1697125666598,
+      "contentHash": "6281165a12aa639705c691fccefd855e",
+      "sourceName": "lib/forge-std/src/StdStyle.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "StdStyle": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdStyle.sol/StdStyle.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdUtils.sol": {
+      "lastModificationDate": 1697125666598,
+      "contentHash": "3ce83748fd76644688f916c9cced545b",
+      "sourceName": "lib/forge-std/src/StdUtils.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "StdUtils": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdUtils.sol/StdUtils.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Vm.sol": {
+      "lastModificationDate": 1697125666598,
+      "contentHash": "eff2556a384c025f56150fb3f78de858",
+      "sourceName": "lib/forge-std/src/Vm.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "Vm": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "Vm.sol/Vm.json"
+        },
+        "VmSafe": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "Vm.sol/VmSafe.json"
+        }
+      }
+    },
+    "lib/forge-std/src/console.sol": {
+      "lastModificationDate": 1697125666598,
+      "contentHash": "100b8a33b917da1147740d7ab8b0ded3",
+      "sourceName": "lib/forge-std/src/console.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "console": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "console.sol/console.json"
+        }
+      }
+    },
+    "lib/forge-std/src/console2.sol": {
+      "lastModificationDate": 1697125666602,
+      "contentHash": "491ca717c1915995e78cc361485a3067",
+      "sourceName": "lib/forge-std/src/console2.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "console2": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "console2.sol/console2.json"
+        }
+      }
+    },
+    "lib/forge-std/src/interfaces/IMulticall3.sol": {
+      "lastModificationDate": 1697125666606,
+      "contentHash": "7b131ca1ca32ef6378b7b9ad5488b901",
+      "sourceName": "lib/forge-std/src/interfaces/IMulticall3.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "IMulticall3": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IMulticall3.sol/IMulticall3.json"
+        }
+      }
+    },
+    "lib/forge-std/src/safeconsole.sol": {
+      "lastModificationDate": 1697125666606,
+      "contentHash": "ac3b1bf5a444db5db3656021830258a8",
+      "sourceName": "lib/forge-std/src/safeconsole.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "safeconsole": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "safeconsole.sol/safeconsole.json"
+        }
+      }
+    },
+    "lib/solmate/src/auth/Owned.sol": {
+      "lastModificationDate": 1697125753319,
+      "contentHash": "11fec455b72d2743b77d783d6017e1e9",
+      "sourceName": "lib/solmate/src/auth/Owned.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "Owned": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "Owned.sol/Owned.json"
+        }
+      }
+    },
+    "lib/solmate/src/tokens/ERC20.sol": {
+      "lastModificationDate": 1697125753331,
+      "contentHash": "0c7c7ada139062536af09d69d96d395c",
+      "sourceName": "lib/solmate/src/tokens/ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC20": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "tokens/ERC20.sol/ERC20.json"
+        }
+      }
+    },
+    "script/Counter.s.sol": {
+      "lastModificationDate": 1697125664842,
+      "contentHash": "7539680fbd3ad49c6632713cc2bb6bf6",
+      "sourceName": "script/Counter.s.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/forge-std/src/safeconsole.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "CounterScript": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "Counter.s.sol/CounterScript.json"
+        }
+      }
+    },
+    "src/KEI.sol": {
+      "lastModificationDate": 1701362352667,
+      "contentHash": "7fd8f2f7dfcb989562787b2b5a0e9022",
+      "sourceName": "src/KEI.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "KEI": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "KEI.sol/KEI.json"
+        }
+      }
+    },
+    "src/KEIKO.sol": {
+      "lastModificationDate": 1701530149240,
+      "contentHash": "fb2ef6842e51f9f372bf52f24f424ccd",
+      "sourceName": "src/KEIKO.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Context": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "KEIKO.sol/Context.json"
+        },
+        "ERC20": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "KEIKO.sol/ERC20.json"
+        },
+        "IERC20": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "KEIKO.sol/IERC20.json"
+        },
+        "IERC20Metadata": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "KEIKO.sol/IERC20Metadata.json"
+        },
+        "IUniswapV2Factory": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "KEIKO.sol/IUniswapV2Factory.json"
+        },
+        "IUniswapV2Pair": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "KEIKO.sol/IUniswapV2Pair.json"
+        },
+        "IUniswapV2Router02": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "KEIKO.sol/IUniswapV2Router02.json"
+        },
+        "KEIKO": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "KEIKO.sol/KEIKO.json"
+        },
+        "Ownable": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "KEIKO.sol/Ownable.json"
+        },
+        "SafeMath": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "KEIKO.sol/SafeMath.json"
+        }
+      }
+    },
+    "src/KEIManager.sol": {
+      "lastModificationDate": 1701215543142,
+      "contentHash": "7f396ce385d4158d161e5171767210ae",
+      "sourceName": "src/KEIManager.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "src/KEI.sol",
+        "src/KEIManager.sol",
+        "src/ReserveController.sol",
+        "src/YieldHandlerRegistry.sol",
+        "src/interfaces/Aave/DataTypes.sol",
+        "src/interfaces/Aave/IAToken.sol",
+        "src/interfaces/Aave/IAaveIncentivesController.sol",
+        "src/interfaces/Aave/IInitializableAToken.sol",
+        "src/interfaces/Aave/IPool.sol",
+        "src/interfaces/Aave/IPoolAddressesProvider.sol",
+        "src/interfaces/Aave/IPoolDataProvider.sol",
+        "src/interfaces/Aave/IScaledBalanceToken.sol",
+        "src/interfaces/Keiko/IYieldHandler.sol",
+        "src/interfaces/Maker/IDSRManager.sol",
+        "src/interfaces/OpenZeppelin/IERC20.sol",
+        "src/yieldhandlers/DAIHandler.sol",
+        "src/yieldhandlers/USDCHandler.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "KEIManager": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "KEIManager.sol/KEIManager.json"
+        }
+      }
+    },
+    "src/ReserveController.sol": {
+      "lastModificationDate": 1701200663069,
+      "contentHash": "0f9c23aab04989c79c746b6d924c75bd",
+      "sourceName": "src/ReserveController.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "src/KEI.sol",
+        "src/KEIManager.sol",
+        "src/ReserveController.sol",
+        "src/YieldHandlerRegistry.sol",
+        "src/interfaces/Aave/DataTypes.sol",
+        "src/interfaces/Aave/IAToken.sol",
+        "src/interfaces/Aave/IAaveIncentivesController.sol",
+        "src/interfaces/Aave/IInitializableAToken.sol",
+        "src/interfaces/Aave/IPool.sol",
+        "src/interfaces/Aave/IPoolAddressesProvider.sol",
+        "src/interfaces/Aave/IPoolDataProvider.sol",
+        "src/interfaces/Aave/IScaledBalanceToken.sol",
+        "src/interfaces/Keiko/IYieldHandler.sol",
+        "src/interfaces/Maker/IDSRManager.sol",
+        "src/interfaces/OpenZeppelin/IERC20.sol",
+        "src/yieldhandlers/DAIHandler.sol",
+        "src/yieldhandlers/USDCHandler.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "ReserveController": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "ReserveController.sol/ReserveController.json"
+        }
+      }
+    },
+    "src/Sale.sol": {
+      "lastModificationDate": 1699886912106,
+      "contentHash": "e50dccebb3bca75b910f4899d7ee247b",
+      "sourceName": "src/Sale.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Sale": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "Sale.sol/Sale.json"
+        }
+      }
+    },
+    "src/Staking.sol": {
+      "lastModificationDate": 1701200542366,
+      "contentHash": "875c043b51f13d1b9949984cba9d3d7b",
+      "sourceName": "src/Staking.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "src/KEI.sol",
+        "src/KEIManager.sol",
+        "src/ReserveController.sol",
+        "src/YieldHandlerRegistry.sol",
+        "src/interfaces/Aave/DataTypes.sol",
+        "src/interfaces/Aave/IAToken.sol",
+        "src/interfaces/Aave/IAaveIncentivesController.sol",
+        "src/interfaces/Aave/IInitializableAToken.sol",
+        "src/interfaces/Aave/IPool.sol",
+        "src/interfaces/Aave/IPoolAddressesProvider.sol",
+        "src/interfaces/Aave/IPoolDataProvider.sol",
+        "src/interfaces/Aave/IScaledBalanceToken.sol",
+        "src/interfaces/Keiko/IYieldHandler.sol",
+        "src/interfaces/Maker/IDSRManager.sol",
+        "src/interfaces/OpenZeppelin/IERC20.sol",
+        "src/yieldhandlers/DAIHandler.sol",
+        "src/yieldhandlers/USDCHandler.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Staking": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "Staking.sol/Staking.json"
+        }
+      }
+    },
+    "src/YieldHandlerRegistry.sol": {
+      "lastModificationDate": 1701034066631,
+      "contentHash": "0942b9b9d3929d60aefff30877f1769a",
+      "sourceName": "src/YieldHandlerRegistry.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "YieldHandlerRegistry": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "YieldHandlerRegistry.sol/YieldHandlerRegistry.json"
+        }
+      }
+    },
+    "src/interfaces/Aave/DataTypes.sol": {
+      "lastModificationDate": 1698423865869,
+      "contentHash": "8542541f25987f242b46328166fca16e",
+      "sourceName": "src/interfaces/Aave/DataTypes.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "DataTypes": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "DataTypes.sol/DataTypes.json"
+        }
+      }
+    },
+    "src/interfaces/Aave/IAToken.sol": {
+      "lastModificationDate": 1699887293194,
+      "contentHash": "52a9ce0410091719d8e609676a6ca1b9",
+      "sourceName": "src/interfaces/Aave/IAToken.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/Aave/DataTypes.sol",
+        "src/interfaces/Aave/IAaveIncentivesController.sol",
+        "src/interfaces/Aave/IInitializableAToken.sol",
+        "src/interfaces/Aave/IPool.sol",
+        "src/interfaces/Aave/IPoolAddressesProvider.sol",
+        "src/interfaces/Aave/IScaledBalanceToken.sol",
+        "src/interfaces/OpenZeppelin/IERC20.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IAToken": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IAToken.sol/IAToken.json"
+        }
+      }
+    },
+    "src/interfaces/Aave/IAaveIncentivesController.sol": {
+      "lastModificationDate": 1699886745391,
+      "contentHash": "340c4a52a9845b9dab36f8ded7543a33",
+      "sourceName": "src/interfaces/Aave/IAaveIncentivesController.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IAaveIncentivesController": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IAaveIncentivesController.sol/IAaveIncentivesController.json"
+        }
+      }
+    },
+    "src/interfaces/Aave/IInitializableAToken.sol": {
+      "lastModificationDate": 1699886717687,
+      "contentHash": "d6e39c4c314c4e580ad36d4778c5a3e0",
+      "sourceName": "src/interfaces/Aave/IInitializableAToken.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/Aave/DataTypes.sol",
+        "src/interfaces/Aave/IAaveIncentivesController.sol",
+        "src/interfaces/Aave/IPool.sol",
+        "src/interfaces/Aave/IPoolAddressesProvider.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IInitializableAToken": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IInitializableAToken.sol/IInitializableAToken.json"
+        }
+      }
+    },
+    "src/interfaces/Aave/IPool.sol": {
+      "lastModificationDate": 1698424021205,
+      "contentHash": "34f3122bd496e589ace578ffe84dc226",
+      "sourceName": "src/interfaces/Aave/IPool.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/Aave/DataTypes.sol",
+        "src/interfaces/Aave/IPoolAddressesProvider.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IPool": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IPool.sol/IPool.json"
+        }
+      }
+    },
+    "src/interfaces/Aave/IPoolAddressesProvider.sol": {
+      "lastModificationDate": 1698422303637,
+      "contentHash": "5d8e631189f90e25903608928af3eed3",
+      "sourceName": "src/interfaces/Aave/IPoolAddressesProvider.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IPoolAddressesProvider": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IPoolAddressesProvider.sol/IPoolAddressesProvider.json"
+        }
+      }
+    },
+    "src/interfaces/Aave/IPoolDataProvider.sol": {
+      "lastModificationDate": 1699885864819,
+      "contentHash": "81919243bff0d48175365f48e8fda19f",
+      "sourceName": "src/interfaces/Aave/IPoolDataProvider.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/Aave/IPoolAddressesProvider.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IPoolDataProvider": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IPoolDataProvider.sol/IPoolDataProvider.json"
+        }
+      }
+    },
+    "src/interfaces/Aave/IScaledBalanceToken.sol": {
+      "lastModificationDate": 1699886622510,
+      "contentHash": "327e514c4c2544dd8978d2a1334f34e2",
+      "sourceName": "src/interfaces/Aave/IScaledBalanceToken.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IScaledBalanceToken": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IScaledBalanceToken.sol/IScaledBalanceToken.json"
+        }
+      }
+    },
+    "src/interfaces/Keiko/IYieldHandler.sol": {
+      "lastModificationDate": 1701198875703,
+      "contentHash": "f08180bb2ae1f48708f54b1801fcab8f",
+      "sourceName": "src/interfaces/Keiko/IYieldHandler.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IYieldHandler": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IYieldHandler.sol/IYieldHandler.json"
+        }
+      }
+    },
+    "src/interfaces/Maker/IDSRManager.sol": {
+      "lastModificationDate": 1701037065632,
+      "contentHash": "4097b92c46d56850471e7a53d6d864da",
+      "sourceName": "src/interfaces/Maker/IDSRManager.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IDSRManager": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IDSRManager.sol/IDSRManager.json"
+        }
+      }
+    },
+    "src/interfaces/OpenZeppelin/Context.sol": {
+      "lastModificationDate": 1701365872004,
+      "contentHash": "335c91e94cc3b7c01d86403fa8d04d18",
+      "sourceName": "src/interfaces/OpenZeppelin/Context.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Context": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "OpenZeppelin/Context.sol/Context.json"
+        }
+      }
+    },
+    "src/interfaces/OpenZeppelin/ERC20.sol": {
+      "lastModificationDate": 1701366391809,
+      "contentHash": "c7148c5a1ebcbb4a9b90bfee824571da",
+      "sourceName": "src/interfaces/OpenZeppelin/ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/OpenZeppelin/Context.sol",
+        "src/interfaces/OpenZeppelin/IERC20.sol",
+        "src/interfaces/OpenZeppelin/IERC20Metadata.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "ERC20": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "ERC20.sol/ERC20.json"
+        }
+      }
+    },
+    "src/interfaces/OpenZeppelin/IERC20.sol": {
+      "lastModificationDate": 1699887082440,
+      "contentHash": "431896ed4784cf54058bf411303f27e4",
+      "sourceName": "src/interfaces/OpenZeppelin/IERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC20": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IERC20.sol/IERC20.json"
+        }
+      }
+    },
+    "src/interfaces/OpenZeppelin/IERC20Metadata.sol": {
+      "lastModificationDate": 1701365970472,
+      "contentHash": "593fc6b06e8a68b5d6e5c43a4efc668b",
+      "sourceName": "src/interfaces/OpenZeppelin/IERC20Metadata.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/OpenZeppelin/IERC20.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC20Metadata": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IERC20Metadata.sol/IERC20Metadata.json"
+        }
+      }
+    },
+    "src/interfaces/OpenZeppelin/Ownable.sol": {
+      "lastModificationDate": 1701365916442,
+      "contentHash": "6d613a341a6c5bbee660f91b18ef1463",
+      "sourceName": "src/interfaces/OpenZeppelin/Ownable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/OpenZeppelin/Context.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Ownable": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "Ownable.sol/Ownable.json"
+        }
+      }
+    },
+    "src/interfaces/Uniswap/IUniswapV2Factory.sol": {
+      "lastModificationDate": 1698343911392,
+      "contentHash": "c1b36b46a276aed7e0954e0036e050c8",
+      "sourceName": "src/interfaces/Uniswap/IUniswapV2Factory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IUniswapV2Factory": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IUniswapV2Factory.sol/IUniswapV2Factory.json"
+        }
+      }
+    },
+    "src/interfaces/Uniswap/IUniswapV2Pair.sol": {
+      "lastModificationDate": 1698343967429,
+      "contentHash": "1d4d8e255a202a54b00503590bd11e30",
+      "sourceName": "src/interfaces/Uniswap/IUniswapV2Pair.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IUniswapV2Pair": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IUniswapV2Pair.sol/IUniswapV2Pair.json"
+        }
+      }
+    },
+    "src/interfaces/Uniswap/IUniswapV2Router01.sol": {
+      "lastModificationDate": 1698343815287,
+      "contentHash": "3526c6d8e16194c21ba5df9314876f13",
+      "sourceName": "src/interfaces/Uniswap/IUniswapV2Router01.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2",
+      "artifacts": {
+        "IUniswapV2Router01": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IUniswapV2Router01.sol/IUniswapV2Router01.json"
+        }
+      }
+    },
+    "src/interfaces/Uniswap/IUniswapV2Router02.sol": {
+      "lastModificationDate": 1698343796219,
+      "contentHash": "0b40738178248d5a550bcb99b5451260",
+      "sourceName": "src/interfaces/Uniswap/IUniswapV2Router02.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/Uniswap/IUniswapV2Router01.sol"
+      ],
+      "versionRequirement": ">=0.6.2",
+      "artifacts": {
+        "IUniswapV2Router02": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "IUniswapV2Router02.sol/IUniswapV2Router02.json"
+        }
+      }
+    },
+    "src/libraries/Context.sol": {
+      "lastModificationDate": 1701215360362,
+      "contentHash": "e107994bf5abd03af269fb439056a948",
+      "sourceName": "src/libraries/Context.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "Context": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "Context.sol/Context.json"
+        }
+      }
+    },
+    "src/libraries/SafeMath.sol": {
+      "lastModificationDate": 1698344864667,
+      "contentHash": "27fefa7022a084d8e06b3d7a6f413d98",
+      "sourceName": "src/libraries/SafeMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.23",
+      "artifacts": {
+        "SafeMath": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "SafeMath.sol/SafeMath.json"
+        }
+      }
+    },
+    "src/tests/KEIManager.t.sol": {
+      "lastModificationDate": 1701199423282,
+      "contentHash": "2e8da5f82408e184247d3621ab22dd33",
+      "sourceName": "src/tests/KEIManager.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "KEIManager.t": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "KEIManager.t.sol/KEIManager.t.json"
+        }
+      }
+    },
+    "src/tests/MockERC20.sol": {
+      "lastModificationDate": 1701198461241,
+      "contentHash": "ae26023034a3e81b68e60fa34144037d",
+      "sourceName": "src/tests/MockERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "MockERC20": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "MockERC20.sol/MockERC20.json"
+        }
+      }
+    },
+    "src/yieldhandlers/DAIHandler.sol": {
+      "lastModificationDate": 1701198654832,
+      "contentHash": "8df73965584c452001f40e34e40a3d62",
+      "sourceName": "src/yieldhandlers/DAIHandler.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "src/interfaces/Keiko/IYieldHandler.sol",
+        "src/interfaces/Maker/IDSRManager.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "DAIHandler": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "DAIHandler.sol/DAIHandler.json"
+        }
+      }
+    },
+    "src/yieldhandlers/DOLAHandler.sol": {
+      "lastModificationDate": 1701197957063,
+      "contentHash": "70ebe002bc5488bb81baa0504de273c1",
+      "sourceName": "src/yieldhandlers/DOLAHandler.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "DOLAHandler": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "DOLAHandler.sol/DOLAHandler.json"
+        }
+      }
+    },
+    "src/yieldhandlers/USDCHandler.sol": {
+      "lastModificationDate": 1701198778640,
+      "contentHash": "86223b8a5362e91e564a9765e8dc416d",
+      "sourceName": "src/yieldhandlers/USDCHandler.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "src/interfaces/Aave/DataTypes.sol",
+        "src/interfaces/Aave/IAToken.sol",
+        "src/interfaces/Aave/IAaveIncentivesController.sol",
+        "src/interfaces/Aave/IInitializableAToken.sol",
+        "src/interfaces/Aave/IPool.sol",
+        "src/interfaces/Aave/IPoolAddressesProvider.sol",
+        "src/interfaces/Aave/IPoolDataProvider.sol",
+        "src/interfaces/Aave/IScaledBalanceToken.sol",
+        "src/interfaces/Keiko/IYieldHandler.sol",
+        "src/interfaces/OpenZeppelin/IERC20.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "USDCHandler": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "USDCHandler.sol/USDCHandler.json"
+        }
+      }
+    },
+    "src/yieldhandlers/eUSDHandler.sol": {
+      "lastModificationDate": 1701197958391,
+      "contentHash": "70ebe002bc5488bb81baa0504de273c1",
+      "sourceName": "src/yieldhandlers/eUSDHandler.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "eUSDHandler": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "eUSDHandler.sol/eUSDHandler.json"
+        }
+      }
+    }
+  }
+}

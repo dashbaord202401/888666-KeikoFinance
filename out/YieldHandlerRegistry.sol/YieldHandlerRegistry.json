@@ -1,0 +1,653 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "stablecoin",
+          "type": "address"
+        }
+      ],
+      "name": "getYieldHandler",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "stablecoin",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "handler",
+          "type": "address"
+        }
+      ],
+      "name": "setYieldHandler",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "yieldHandlers",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5061019c806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806344d28c75146100465780635f8d671c14610084578063f47a14fe146100cc575b600080fd5b610082610054366004610111565b6001600160a01b03918216600090815260208190526040902080546001600160a01b03191691909216179055565b005b6100b0610092366004610144565b6001600160a01b039081166000908152602081905260409020541690565b6040516001600160a01b03909116815260200160405180910390f35b6100b06100da366004610144565b6000602081905290815260409020546001600160a01b031681565b80356001600160a01b038116811461010c57600080fd5b919050565b6000806040838503121561012457600080fd5b61012d836100f5565b915061013b602084016100f5565b90509250929050565b60006020828403121561015657600080fd5b61015f826100f5565b939250505056fea2646970667358221220422c148233daa982d15dcd00cdee76e372fc881ce5b63cfadd801bc96c89b25064736f6c63430008150033",
+    "sourceMap": "152:391:23:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c806344d28c75146100465780635f8d671c14610084578063f47a14fe146100cc575b600080fd5b610082610054366004610111565b6001600160a01b03918216600090815260208190526040902080546001600160a01b03191691909216179055565b005b6100b0610092366004610144565b6001600160a01b039081166000908152602081905260409020541690565b6040516001600160a01b03909116815260200160405180910390f35b6100b06100da366004610144565b6000602081905290815260409020546001600160a01b031681565b80356001600160a01b038116811461010c57600080fd5b919050565b6000806040838503121561012457600080fd5b61012d836100f5565b915061013b602084016100f5565b90509250929050565b60006020828403121561015657600080fd5b61015f826100f5565b939250505056fea2646970667358221220422c148233daa982d15dcd00cdee76e372fc881ce5b63cfadd801bc96c89b25064736f6c63430008150033",
+    "sourceMap": "152:391:23:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;243:166;;;;;;:::i;:::-;-1:-1:-1;;;;;367:25:23;;;:13;:25;;;;;;;;;;:35;;-1:-1:-1;;;;;;367:35:23;;;;;;;;243:166;;;415:126;;;;;;:::i;:::-;-1:-1:-1;;;;;509:25:23;;;483:7;509:25;;;;;;;;;;;;;415:126;;;;-1:-1:-1;;;;;812:32:51;;;794:51;;782:2;767:18;415:126:23;;;;;;;188:48;;;;;;:::i;:::-;;;;;;;;;;;;;-1:-1:-1;;;;;188:48:23;;;14:173:51;82:20;;-1:-1:-1;;;;;131:31:51;;121:42;;111:70;;177:1;174;167:12;111:70;14:173;;;:::o;192:260::-;260:6;268;321:2;309:9;300:7;296:23;292:32;289:52;;;337:1;334;327:12;289:52;360:29;379:9;360:29;:::i;:::-;350:39;;408:38;442:2;431:9;427:18;408:38;:::i;:::-;398:48;;192:260;;;;;:::o;457:186::-;516:6;569:2;557:9;548:7;544:23;540:32;537:52;;;585:1;582;575:12;537:52;608:29;627:9;608:29;:::i;:::-;598:39;457:186;-1:-1:-1;;;457:186:51:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getYieldHandler(address)": "5f8d671c",
+    "setYieldHandler(address,address)": "44d28c75",
+    "yieldHandlers(address)": "f47a14fe"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"stablecoin\",\"type\":\"address\"}],\"name\":\"getYieldHandler\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"stablecoin\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"handler\",\"type\":\"address\"}],\"name\":\"setYieldHandler\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"yieldHandlers\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/YieldHandlerRegistry.sol\":\"YieldHandlerRegistry\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/solmate/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":solmate/=lib/solmate/src/\"]},\"sources\":{\"lib/solmate/src/auth/Owned.sol\":{\"keccak256\":\"0xfedb27d14c508342c33eb067c9a02eabcdb0f9dcf93b04ded1001f580d12d0ea\",\"license\":\"AGPL-3.0-only\",\"urls\":[\"bzz-raw://1ff52bbee698b9cf9e4574615e6550be0887ccf355f6571e23d6f25b332e79b4\",\"dweb:/ipfs/QmVorA2apojVRStzS7h8aFccR3Uv32G6HVtBtFHZrE7YXx\"]},\"lib/solmate/src/tokens/ERC20.sol\":{\"keccak256\":\"0xcdfd8db76b2a3415620e4d18cc5545f3d50de792dbf2c3dd5adb40cbe6f94b10\",\"license\":\"AGPL-3.0-only\",\"urls\":[\"bzz-raw://57b3ab70cde374af1cf2c9888636e8de6cf660f087b1c9abd805e9271e19fa35\",\"dweb:/ipfs/QmNrLDBAHYFjpjSd12jerm1AdBkDqEYUUaXgnT854BUZ97\"]},\"src/YieldHandlerRegistry.sol\":{\"keccak256\":\"0x32bb8caba220a6326ed6a160a4c78f3c251cfb727af0204e219a22a88041c063\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2788f801e87eefffc80eccc58ffbb7d47b9f5344c5129a81aff67ec2e48b3b32\",\"dweb:/ipfs/QmeTj2Xeqm6iK85NP86fcHBVeEgujJm6Uhwkzif6HFEfGk\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "stablecoin",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getYieldHandler",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "stablecoin",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "handler",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setYieldHandler"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "yieldHandlers",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/solmate/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "solmate/=lib/solmate/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/YieldHandlerRegistry.sol": "YieldHandlerRegistry"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/solmate/src/auth/Owned.sol": {
+        "keccak256": "0xfedb27d14c508342c33eb067c9a02eabcdb0f9dcf93b04ded1001f580d12d0ea",
+        "urls": [
+          "bzz-raw://1ff52bbee698b9cf9e4574615e6550be0887ccf355f6571e23d6f25b332e79b4",
+          "dweb:/ipfs/QmVorA2apojVRStzS7h8aFccR3Uv32G6HVtBtFHZrE7YXx"
+        ],
+        "license": "AGPL-3.0-only"
+      },
+      "lib/solmate/src/tokens/ERC20.sol": {
+        "keccak256": "0xcdfd8db76b2a3415620e4d18cc5545f3d50de792dbf2c3dd5adb40cbe6f94b10",
+        "urls": [
+          "bzz-raw://57b3ab70cde374af1cf2c9888636e8de6cf660f087b1c9abd805e9271e19fa35",
+          "dweb:/ipfs/QmNrLDBAHYFjpjSd12jerm1AdBkDqEYUUaXgnT854BUZ97"
+        ],
+        "license": "AGPL-3.0-only"
+      },
+      "src/YieldHandlerRegistry.sol": {
+        "keccak256": "0x32bb8caba220a6326ed6a160a4c78f3c251cfb727af0204e219a22a88041c063",
+        "urls": [
+          "bzz-raw://2788f801e87eefffc80eccc58ffbb7d47b9f5344c5129a81aff67ec2e48b3b32",
+          "dweb:/ipfs/QmeTj2Xeqm6iK85NP86fcHBVeEgujJm6Uhwkzif6HFEfGk"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/YieldHandlerRegistry.sol",
+    "id": 42958,
+    "exportedSymbols": {
+      "ERC20": [
+        39749
+      ],
+      "Owned": [
+        39361
+      ],
+      "YieldHandlerRegistry": [
+        42957
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:511:23",
+    "nodes": [
+      {
+        "id": 42922,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:23",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 42924,
+        "nodeType": "ImportDirective",
+        "src": "57:45:23",
+        "nodes": [],
+        "absolutePath": "lib/solmate/src/auth/Owned.sol",
+        "file": "solmate/auth/Owned.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 42958,
+        "sourceUnit": 39362,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 42923,
+              "name": "Owned",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 39361,
+              "src": "65:5:23",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 42926,
+        "nodeType": "ImportDirective",
+        "src": "103:47:23",
+        "nodes": [],
+        "absolutePath": "lib/solmate/src/tokens/ERC20.sol",
+        "file": "solmate/tokens/ERC20.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 42958,
+        "sourceUnit": 39750,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 42925,
+              "name": "ERC20",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 39749,
+              "src": "111:5:23",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 42957,
+        "nodeType": "ContractDefinition",
+        "src": "152:391:23",
+        "nodes": [
+          {
+            "id": 42930,
+            "nodeType": "VariableDeclaration",
+            "src": "188:48:23",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "f47a14fe",
+            "mutability": "mutable",
+            "name": "yieldHandlers",
+            "nameLocation": "223:13:23",
+            "scope": 42957,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_address_$",
+              "typeString": "mapping(address => address)"
+            },
+            "typeName": {
+              "id": 42929,
+              "keyName": "",
+              "keyNameLocation": "-1:-1:-1",
+              "keyType": {
+                "id": 42927,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "196:7:23",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "188:27:23",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_address_$",
+                "typeString": "mapping(address => address)"
+              },
+              "valueName": "",
+              "valueNameLocation": "-1:-1:-1",
+              "valueType": {
+                "id": 42928,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "207:7:23",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 42944,
+            "nodeType": "FunctionDefinition",
+            "src": "243:166:23",
+            "nodes": [],
+            "body": {
+              "id": 42943,
+              "nodeType": "Block",
+              "src": "314:95:23",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 42941,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "id": 42937,
+                        "name": "yieldHandlers",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 42930,
+                        "src": "367:13:23",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_address_$",
+                          "typeString": "mapping(address => address)"
+                        }
+                      },
+                      "id": 42939,
+                      "indexExpression": {
+                        "id": 42938,
+                        "name": "stablecoin",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 42932,
+                        "src": "381:10:23",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "367:25:23",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 42940,
+                      "name": "handler",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 42934,
+                      "src": "395:7:23",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "367:35:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 42942,
+                  "nodeType": "ExpressionStatement",
+                  "src": "367:35:23"
+                }
+              ]
+            },
+            "functionSelector": "44d28c75",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setYieldHandler",
+            "nameLocation": "252:15:23",
+            "parameters": {
+              "id": 42935,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 42932,
+                  "mutability": "mutable",
+                  "name": "stablecoin",
+                  "nameLocation": "276:10:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42944,
+                  "src": "268:18:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 42931,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "268:7:23",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 42934,
+                  "mutability": "mutable",
+                  "name": "handler",
+                  "nameLocation": "296:7:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42944,
+                  "src": "288:15:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 42933,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "288:7:23",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "267:37:23"
+            },
+            "returnParameters": {
+              "id": 42936,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "314:0:23"
+            },
+            "scope": 42957,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 42956,
+            "nodeType": "FunctionDefinition",
+            "src": "415:126:23",
+            "nodes": [],
+            "body": {
+              "id": 42955,
+              "nodeType": "Block",
+              "src": "492:49:23",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "baseExpression": {
+                      "id": 42951,
+                      "name": "yieldHandlers",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 42930,
+                      "src": "509:13:23",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_address_$_t_address_$",
+                        "typeString": "mapping(address => address)"
+                      }
+                    },
+                    "id": 42953,
+                    "indexExpression": {
+                      "id": 42952,
+                      "name": "stablecoin",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 42946,
+                      "src": "523:10:23",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "509:25:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 42950,
+                  "id": 42954,
+                  "nodeType": "Return",
+                  "src": "502:32:23"
+                }
+              ]
+            },
+            "functionSelector": "5f8d671c",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getYieldHandler",
+            "nameLocation": "424:15:23",
+            "parameters": {
+              "id": 42947,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 42946,
+                  "mutability": "mutable",
+                  "name": "stablecoin",
+                  "nameLocation": "448:10:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42956,
+                  "src": "440:18:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 42945,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "440:7:23",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "439:20:23"
+            },
+            "returnParameters": {
+              "id": 42950,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 42949,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42956,
+                  "src": "483:7:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 42948,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "483:7:23",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "482:9:23"
+            },
+            "scope": 42957,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "YieldHandlerRegistry",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          42957
+        ],
+        "name": "YieldHandlerRegistry",
+        "nameLocation": "161:20:23",
+        "scope": 42958,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 23
+}

@@ -1,0 +1,678 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "fromAsset",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "fromAssetAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "toAsset",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "minToAssetAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct DexSwapData",
+          "name": "_swap",
+          "type": "tuple"
+        }
+      ],
+      "name": "swap",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "toAssetAmount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "swap((address,uint256,address,uint256,bytes))": "08c82ba4"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"fromAsset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"fromAssetAmount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"toAsset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"minToAssetAmount\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct DexSwapData\",\"name\":\"_swap\",\"type\":\"tuple\"}],\"name\":\"swap\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"toAssetAmount\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"mStable\",\"details\":\"VERSION: 1.0          DATE:    2022-03-07\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Dex Swap interface\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Generic on-chain ABI to Swap tokens on a DEX.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/IDexSwap.sol\":\"IDexSwap\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/solmate/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":solmate/=lib/solmate/src/\"]},\"sources\":{\"src/interfaces/IDexSwap.sol\":{\"keccak256\":\"0x9c723d4abbee682445a5edb8a20465f6746b95d98bb5a3414364bd69b1ba640f\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://4e3a0d3d8390812be90e03269ada2436b999fbc0ad5b467a9b6447b26237bdc0\",\"dweb:/ipfs/QmTa6V38gZvBTQZXBt9kx2suUiEChmRLfnJ2Z1MET4Qdjm\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "struct DexSwapData",
+              "name": "_swap",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "fromAsset",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "fromAssetAmount",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "toAsset",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "minToAssetAmount",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "data",
+                  "type": "bytes"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "swap",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "toAssetAmount",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/solmate/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "solmate/=lib/solmate/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/interfaces/IDexSwap.sol": "IDexSwap"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/interfaces/IDexSwap.sol": {
+        "keccak256": "0x9c723d4abbee682445a5edb8a20465f6746b95d98bb5a3414364bd69b1ba640f",
+        "urls": [
+          "bzz-raw://4e3a0d3d8390812be90e03269ada2436b999fbc0ad5b467a9b6447b26237bdc0",
+          "dweb:/ipfs/QmTa6V38gZvBTQZXBt9kx2suUiEChmRLfnJ2Z1MET4Qdjm"
+        ],
+        "license": "AGPL-3.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/IDexSwap.sol",
+    "id": 48879,
+    "exportedSymbols": {
+      "DexSwapData": [
+        48849
+      ],
+      "IDexAsyncSwap": [
+        48878
+      ],
+      "IDexSwap": [
+        48859
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "46:924:29",
+    "nodes": [
+      {
+        "id": 48838,
+        "nodeType": "PragmaDirective",
+        "src": "46:23:29",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 48849,
+        "nodeType": "StructDefinition",
+        "src": "71:203:29",
+        "nodes": [],
+        "canonicalName": "DexSwapData",
+        "members": [
+          {
+            "constant": false,
+            "id": 48840,
+            "mutability": "mutable",
+            "name": "fromAsset",
+            "nameLocation": "104:9:29",
+            "nodeType": "VariableDeclaration",
+            "scope": 48849,
+            "src": "96:17:29",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 48839,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "96:7:29",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 48842,
+            "mutability": "mutable",
+            "name": "fromAssetAmount",
+            "nameLocation": "127:15:29",
+            "nodeType": "VariableDeclaration",
+            "scope": 48849,
+            "src": "119:23:29",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 48841,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "119:7:29",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 48844,
+            "mutability": "mutable",
+            "name": "toAsset",
+            "nameLocation": "156:7:29",
+            "nodeType": "VariableDeclaration",
+            "scope": 48849,
+            "src": "148:15:29",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 48843,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "148:7:29",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 48846,
+            "mutability": "mutable",
+            "name": "minToAssetAmount",
+            "nameLocation": "177:16:29",
+            "nodeType": "VariableDeclaration",
+            "scope": 48849,
+            "src": "169:24:29",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 48845,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "169:7:29",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 48848,
+            "mutability": "mutable",
+            "name": "data",
+            "nameLocation": "205:4:29",
+            "nodeType": "VariableDeclaration",
+            "scope": 48849,
+            "src": "199:10:29",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes_storage_ptr",
+              "typeString": "bytes"
+            },
+            "typeName": {
+              "id": 48847,
+              "name": "bytes",
+              "nodeType": "ElementaryTypeName",
+              "src": "199:5:29",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes_storage_ptr",
+                "typeString": "bytes"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "DexSwapData",
+        "nameLocation": "78:11:29",
+        "scope": 48879,
+        "visibility": "public"
+      },
+      {
+        "id": 48859,
+        "nodeType": "ContractDefinition",
+        "src": "450:108:29",
+        "nodes": [
+          {
+            "id": 48858,
+            "nodeType": "FunctionDefinition",
+            "src": "475:81:29",
+            "nodes": [],
+            "functionSelector": "08c82ba4",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "swap",
+            "nameLocation": "484:4:29",
+            "parameters": {
+              "id": 48854,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48853,
+                  "mutability": "mutable",
+                  "name": "_swap",
+                  "nameLocation": "508:5:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48858,
+                  "src": "489:24:29",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_DexSwapData_$48849_memory_ptr",
+                    "typeString": "struct DexSwapData"
+                  },
+                  "typeName": {
+                    "id": 48852,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 48851,
+                      "name": "DexSwapData",
+                      "nameLocations": [
+                        "489:11:29"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48849,
+                      "src": "489:11:29"
+                    },
+                    "referencedDeclaration": 48849,
+                    "src": "489:11:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_DexSwapData_$48849_storage_ptr",
+                      "typeString": "struct DexSwapData"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "488:26:29"
+            },
+            "returnParameters": {
+              "id": 48857,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48856,
+                  "mutability": "mutable",
+                  "name": "toAssetAmount",
+                  "nameLocation": "541:13:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48858,
+                  "src": "533:21:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 48855,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "533:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "532:23:29"
+            },
+            "scope": 48859,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IDexSwap",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 48850,
+          "nodeType": "StructuredDocumentation",
+          "src": "276:173:29",
+          "text": " @title   Dex Swap interface\n @author  mStable\n @notice  Generic on-chain ABI to Swap tokens on a DEX.\n @dev     VERSION: 1.0\n          DATE:    2022-03-07"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          48859
+        ],
+        "name": "IDexSwap",
+        "nameLocation": "460:8:29",
+        "scope": 48879,
+        "usedErrors": [],
+        "usedEvents": []
+      },
+      {
+        "id": 48878,
+        "nodeType": "ContractDefinition",
+        "src": "760:210:29",
+        "nodes": [
+          {
+            "id": 48866,
+            "nodeType": "FunctionDefinition",
+            "src": "790:57:29",
+            "nodes": [],
+            "functionSelector": "e5538923",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initiateSwap",
+            "nameLocation": "799:12:29",
+            "parameters": {
+              "id": 48864,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48863,
+                  "mutability": "mutable",
+                  "name": "_swap",
+                  "nameLocation": "831:5:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48866,
+                  "src": "812:24:29",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_DexSwapData_$48849_memory_ptr",
+                    "typeString": "struct DexSwapData"
+                  },
+                  "typeName": {
+                    "id": 48862,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 48861,
+                      "name": "DexSwapData",
+                      "nameLocations": [
+                        "812:11:29"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48849,
+                      "src": "812:11:29"
+                    },
+                    "referencedDeclaration": 48849,
+                    "src": "812:11:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_DexSwapData_$48849_storage_ptr",
+                      "typeString": "struct DexSwapData"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "811:26:29"
+            },
+            "returnParameters": {
+              "id": 48865,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "846:0:29"
+            },
+            "scope": 48878,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48872,
+            "nodeType": "FunctionDefinition",
+            "src": "853:55:29",
+            "nodes": [],
+            "functionSelector": "777bf728",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "settleSwap",
+            "nameLocation": "862:10:29",
+            "parameters": {
+              "id": 48870,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48869,
+                  "mutability": "mutable",
+                  "name": "_swap",
+                  "nameLocation": "892:5:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48872,
+                  "src": "873:24:29",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_DexSwapData_$48849_memory_ptr",
+                    "typeString": "struct DexSwapData"
+                  },
+                  "typeName": {
+                    "id": 48868,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 48867,
+                      "name": "DexSwapData",
+                      "nameLocations": [
+                        "873:11:29"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48849,
+                      "src": "873:11:29"
+                    },
+                    "referencedDeclaration": 48849,
+                    "src": "873:11:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_DexSwapData_$48849_storage_ptr",
+                      "typeString": "struct DexSwapData"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "872:26:29"
+            },
+            "returnParameters": {
+              "id": 48871,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "907:0:29"
+            },
+            "scope": 48878,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48877,
+            "nodeType": "FunctionDefinition",
+            "src": "914:54:29",
+            "nodes": [],
+            "functionSelector": "5dc013e3",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "cancelSwap",
+            "nameLocation": "923:10:29",
+            "parameters": {
+              "id": 48875,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48874,
+                  "mutability": "mutable",
+                  "name": "orderUid",
+                  "nameLocation": "949:8:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48877,
+                  "src": "934:23:29",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 48873,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "934:5:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "933:25:29"
+            },
+            "returnParameters": {
+              "id": 48876,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "967:0:29"
+            },
+            "scope": 48878,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IDexAsyncSwap",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 48860,
+          "nodeType": "StructuredDocumentation",
+          "src": "560:199:29",
+          "text": " @title   Dex Asynchronous Swap interface\n @author  mStable\n @notice  Generic on-chain ABI to Swap asynchronous tokens on a DEX.\n @dev     VERSION: 1.0\n          DATE:    2022-06-07"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          48878
+        ],
+        "name": "IDexAsyncSwap",
+        "nameLocation": "770:13:29",
+        "scope": 48879,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "AGPL-3.0-or-later"
+  },
+  "id": 29
+}

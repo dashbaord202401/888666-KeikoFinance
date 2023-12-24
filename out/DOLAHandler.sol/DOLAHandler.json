@@ -1,0 +1,33 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "src/yieldhandlers/DOLAHandler.sol",
+    "id": 46473,
+    "exportedSymbols": {},
+    "nodeType": "SourceUnit",
+    "src": "0:23:48",
+    "nodes": [
+      {
+        "id": 46472,
+        "nodeType": "PragmaDirective",
+        "src": "0:23:48",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      }
+    ]
+  },
+  "id": 48
+}

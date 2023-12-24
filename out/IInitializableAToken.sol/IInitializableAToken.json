@@ -1,0 +1,959 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "underlyingAsset",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "pool",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "treasury",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "incentivesController",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "aTokenDecimals",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "aTokenName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "aTokenSymbol",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "params",
+          "type": "bytes"
+        }
+      ],
+      "name": "Initialized",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IPool",
+          "name": "pool",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "treasury",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "underlyingAsset",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IAaveIncentivesController",
+          "name": "incentivesController",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8",
+          "name": "aTokenDecimals",
+          "type": "uint8"
+        },
+        {
+          "internalType": "string",
+          "name": "aTokenName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "aTokenSymbol",
+          "type": "string"
+        },
+        {
+          "internalType": "bytes",
+          "name": "params",
+          "type": "bytes"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "initialize(address,address,address,address,uint8,string,string,bytes)": "183fb413"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"underlyingAsset\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"pool\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"treasury\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"incentivesController\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"aTokenDecimals\",\"type\":\"uint8\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"aTokenName\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"aTokenSymbol\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"params\",\"type\":\"bytes\"}],\"name\":\"Initialized\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"contract IPool\",\"name\":\"pool\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"treasury\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"underlyingAsset\",\"type\":\"address\"},{\"internalType\":\"contract IAaveIncentivesController\",\"name\":\"incentivesController\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"aTokenDecimals\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"aTokenName\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"aTokenSymbol\",\"type\":\"string\"},{\"internalType\":\"bytes\",\"name\":\"params\",\"type\":\"bytes\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Aave\",\"events\":{\"Initialized(address,address,address,address,uint8,string,string,bytes)\":{\"details\":\"Emitted when an aToken is initialized\",\"params\":{\"aTokenDecimals\":\"The decimals of the underlying\",\"aTokenName\":\"The name of the aToken\",\"aTokenSymbol\":\"The symbol of the aToken\",\"incentivesController\":\"The address of the incentives controller for this aToken\",\"params\":\"A set of encoded parameters for additional initialization\",\"pool\":\"The address of the associated pool\",\"treasury\":\"The address of the treasury\",\"underlyingAsset\":\"The address of the underlying asset\"}}},\"kind\":\"dev\",\"methods\":{\"initialize(address,address,address,address,uint8,string,string,bytes)\":{\"params\":{\"aTokenDecimals\":\"The decimals of the aToken, same as the underlying asset's\",\"aTokenName\":\"The name of the aToken\",\"aTokenSymbol\":\"The symbol of the aToken\",\"incentivesController\":\"The smart contract managing potential incentives distribution\",\"params\":\"A set of encoded parameters for additional initialization\",\"pool\":\"The pool contract that is initializing this contract\",\"treasury\":\"The address of the Aave treasury, receiving the fees on this aToken\",\"underlyingAsset\":\"The address of the underlying asset of this aToken (E.g. WETH for aWETH)\"}}},\"title\":\"IInitializableAToken\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"initialize(address,address,address,address,uint8,string,string,bytes)\":{\"notice\":\"Initializes the aToken\"}},\"notice\":\"Interface for the initialize function on AToken\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/Aave/IInitializableAToken.sol\":\"IInitializableAToken\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/solmate/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":solmate/=lib/solmate/src/\"]},\"sources\":{\"src/interfaces/Aave/DataTypes.sol\":{\"keccak256\":\"0x7e78c783c5bed77e71a80b672a374638185e636bf4b9dc6405f64a02faa44211\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://3fc3e47ed4a16097a9cfa7c56fb33ad5f22f44bc9fa792c284749bb26898414e\",\"dweb:/ipfs/QmUfmZwz9k4YiQkqVdfJrdEqxfUgknRywXEH18bhSBGb1R\"]},\"src/interfaces/Aave/IAaveIncentivesController.sol\":{\"keccak256\":\"0x039d08a0169fbf7360cfdd314d5721c2c65c4434a873f4ba7831bb21c7cd5a55\",\"license\":\"AGPL-3.0\",\"urls\":[\"bzz-raw://f24f42e764dbd6dd89132724b0ebf99af468cbf671f64bcafc0d6ee8b68cbcad\",\"dweb:/ipfs/QmVmd6Pa2ah8tL4gmgmwcUeZ6L3VtqwTtecW7xUxMTZL2s\"]},\"src/interfaces/Aave/IInitializableAToken.sol\":{\"keccak256\":\"0x659cf043f38078f513d30a86ce67f4f9e06fce48377a4891fa0e2609c9f913b0\",\"license\":\"AGPL-3.0\",\"urls\":[\"bzz-raw://c3693a3a705802b1e890d7788d952f39058c40ed3e56fc3780c35a3e24f5a020\",\"dweb:/ipfs/QmPWfiqDqVAGRQCDqu7ExhPDWDfKPypr8dj5ZzFyAwchAK\"]},\"src/interfaces/Aave/IPool.sol\":{\"keccak256\":\"0x3d7d1c17fde09268db02a0e35ff3633b45c47971591b2cc12d0f369184447fe3\",\"license\":\"AGPL-3.0\",\"urls\":[\"bzz-raw://a5ebd78c46d1d61efc90ce69ed7e50bb46cb3d1d2281df778a70d5aa3acb9a15\",\"dweb:/ipfs/QmNr9Tsy9HnkEG1kkvGWqLWPkXMpiWuPYv1dzLujuLb4hm\"]},\"src/interfaces/Aave/IPoolAddressesProvider.sol\":{\"keccak256\":\"0x1538fb5272a08f14d432299364b2148b578bb2b60869c4b78691c9a15a73dd4b\",\"license\":\"AGPL-3.0\",\"urls\":[\"bzz-raw://0f4b781d7e572c59a2427f692c3442b271900c3e7fb5cb7f9123169a8a1dbbd5\",\"dweb:/ipfs/QmaTaQbjwkqdAs4SbFMZErVRB3FaFcVu4XubgTGvQV9WRS\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "underlyingAsset",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "pool",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "treasury",
+              "type": "address",
+              "indexed": false
+            },
+            {
+              "internalType": "address",
+              "name": "incentivesController",
+              "type": "address",
+              "indexed": false
+            },
+            {
+              "internalType": "uint8",
+              "name": "aTokenDecimals",
+              "type": "uint8",
+              "indexed": false
+            },
+            {
+              "internalType": "string",
+              "name": "aTokenName",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "string",
+              "name": "aTokenSymbol",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "bytes",
+              "name": "params",
+              "type": "bytes",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Initialized",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "contract IPool",
+              "name": "pool",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "treasury",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "underlyingAsset",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IAaveIncentivesController",
+              "name": "incentivesController",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "aTokenDecimals",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "aTokenName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "aTokenSymbol",
+              "type": "string"
+            },
+            {
+              "internalType": "bytes",
+              "name": "params",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "initialize"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "initialize(address,address,address,address,uint8,string,string,bytes)": {
+            "params": {
+              "aTokenDecimals": "The decimals of the aToken, same as the underlying asset's",
+              "aTokenName": "The name of the aToken",
+              "aTokenSymbol": "The symbol of the aToken",
+              "incentivesController": "The smart contract managing potential incentives distribution",
+              "params": "A set of encoded parameters for additional initialization",
+              "pool": "The pool contract that is initializing this contract",
+              "treasury": "The address of the Aave treasury, receiving the fees on this aToken",
+              "underlyingAsset": "The address of the underlying asset of this aToken (E.g. WETH for aWETH)"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "initialize(address,address,address,address,uint8,string,string,bytes)": {
+            "notice": "Initializes the aToken"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/solmate/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "solmate/=lib/solmate/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/interfaces/Aave/IInitializableAToken.sol": "IInitializableAToken"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/interfaces/Aave/DataTypes.sol": {
+        "keccak256": "0x7e78c783c5bed77e71a80b672a374638185e636bf4b9dc6405f64a02faa44211",
+        "urls": [
+          "bzz-raw://3fc3e47ed4a16097a9cfa7c56fb33ad5f22f44bc9fa792c284749bb26898414e",
+          "dweb:/ipfs/QmUfmZwz9k4YiQkqVdfJrdEqxfUgknRywXEH18bhSBGb1R"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/interfaces/Aave/IAaveIncentivesController.sol": {
+        "keccak256": "0x039d08a0169fbf7360cfdd314d5721c2c65c4434a873f4ba7831bb21c7cd5a55",
+        "urls": [
+          "bzz-raw://f24f42e764dbd6dd89132724b0ebf99af468cbf671f64bcafc0d6ee8b68cbcad",
+          "dweb:/ipfs/QmVmd6Pa2ah8tL4gmgmwcUeZ6L3VtqwTtecW7xUxMTZL2s"
+        ],
+        "license": "AGPL-3.0"
+      },
+      "src/interfaces/Aave/IInitializableAToken.sol": {
+        "keccak256": "0x659cf043f38078f513d30a86ce67f4f9e06fce48377a4891fa0e2609c9f913b0",
+        "urls": [
+          "bzz-raw://c3693a3a705802b1e890d7788d952f39058c40ed3e56fc3780c35a3e24f5a020",
+          "dweb:/ipfs/QmPWfiqDqVAGRQCDqu7ExhPDWDfKPypr8dj5ZzFyAwchAK"
+        ],
+        "license": "AGPL-3.0"
+      },
+      "src/interfaces/Aave/IPool.sol": {
+        "keccak256": "0x3d7d1c17fde09268db02a0e35ff3633b45c47971591b2cc12d0f369184447fe3",
+        "urls": [
+          "bzz-raw://a5ebd78c46d1d61efc90ce69ed7e50bb46cb3d1d2281df778a70d5aa3acb9a15",
+          "dweb:/ipfs/QmNr9Tsy9HnkEG1kkvGWqLWPkXMpiWuPYv1dzLujuLb4hm"
+        ],
+        "license": "AGPL-3.0"
+      },
+      "src/interfaces/Aave/IPoolAddressesProvider.sol": {
+        "keccak256": "0x1538fb5272a08f14d432299364b2148b578bb2b60869c4b78691c9a15a73dd4b",
+        "urls": [
+          "bzz-raw://0f4b781d7e572c59a2427f692c3442b271900c3e7fb5cb7f9123169a8a1dbbd5",
+          "dweb:/ipfs/QmaTaQbjwkqdAs4SbFMZErVRB3FaFcVu4XubgTGvQV9WRS"
+        ],
+        "license": "AGPL-3.0"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/Aave/IInitializableAToken.sol",
+    "id": 43515,
+    "exportedSymbols": {
+      "IAaveIncentivesController": [
+        43465
+      ],
+      "IInitializableAToken": [
+        43514
+      ],
+      "IPool": [
+        44153
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "37:2003:27",
+    "nodes": [
+      {
+        "id": 43467,
+        "nodeType": "PragmaDirective",
+        "src": "37:23:27",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 43469,
+        "nodeType": "ImportDirective",
+        "src": "62:74:27",
+        "nodes": [],
+        "absolutePath": "src/interfaces/Aave/IAaveIncentivesController.sol",
+        "file": "./IAaveIncentivesController.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 43515,
+        "sourceUnit": 43466,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 43468,
+              "name": "IAaveIncentivesController",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 43465,
+              "src": "70:25:27",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 43471,
+        "nodeType": "ImportDirective",
+        "src": "137:34:27",
+        "nodes": [],
+        "absolutePath": "src/interfaces/Aave/IPool.sol",
+        "file": "./IPool.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 43515,
+        "sourceUnit": 44154,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 43470,
+              "name": "IPool",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 44153,
+              "src": "145:5:27",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 43514,
+        "nodeType": "ContractDefinition",
+        "src": "287:1753:27",
+        "nodes": [
+          {
+            "id": 43491,
+            "nodeType": "EventDefinition",
+            "src": "868:233:27",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 43473,
+              "nodeType": "StructuredDocumentation",
+              "src": "322:543:27",
+              "text": " @dev Emitted when an aToken is initialized\n @param underlyingAsset The address of the underlying asset\n @param pool The address of the associated pool\n @param treasury The address of the treasury\n @param incentivesController The address of the incentives controller for this aToken\n @param aTokenDecimals The decimals of the underlying\n @param aTokenName The name of the aToken\n @param aTokenSymbol The symbol of the aToken\n @param params A set of encoded parameters for additional initialization"
+            },
+            "eventSelector": "b19e051f8af41150ccccb3fc2c2d8d15f4a4cf434f32a559ba75fe73d6eea20b",
+            "name": "Initialized",
+            "nameLocation": "874:11:27",
+            "parameters": {
+              "id": 43490,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 43475,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "underlyingAsset",
+                  "nameLocation": "907:15:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43491,
+                  "src": "891:31:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 43474,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "891:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43477,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "pool",
+                  "nameLocation": "944:4:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43491,
+                  "src": "928:20:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 43476,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "928:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43479,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "treasury",
+                  "nameLocation": "962:8:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43491,
+                  "src": "954:16:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 43478,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "954:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43481,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "incentivesController",
+                  "nameLocation": "984:20:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43491,
+                  "src": "976:28:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 43480,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "976:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43483,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "aTokenDecimals",
+                  "nameLocation": "1016:14:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43491,
+                  "src": "1010:20:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 43482,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1010:5:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43485,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "aTokenName",
+                  "nameLocation": "1043:10:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43491,
+                  "src": "1036:17:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 43484,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1036:6:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43487,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "aTokenSymbol",
+                  "nameLocation": "1066:12:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43491,
+                  "src": "1059:19:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 43486,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1059:6:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43489,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "params",
+                  "nameLocation": "1090:6:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43491,
+                  "src": "1084:12:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 43488,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1084:5:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "885:215:27"
+            }
+          },
+          {
+            "id": 43513,
+            "nodeType": "FunctionDefinition",
+            "src": "1767:271:27",
+            "nodes": [],
+            "documentation": {
+              "id": 43492,
+              "nodeType": "StructuredDocumentation",
+              "src": "1105:659:27",
+              "text": " @notice Initializes the aToken\n @param pool The pool contract that is initializing this contract\n @param treasury The address of the Aave treasury, receiving the fees on this aToken\n @param underlyingAsset The address of the underlying asset of this aToken (E.g. WETH for aWETH)\n @param incentivesController The smart contract managing potential incentives distribution\n @param aTokenDecimals The decimals of the aToken, same as the underlying asset's\n @param aTokenName The name of the aToken\n @param aTokenSymbol The symbol of the aToken\n @param params A set of encoded parameters for additional initialization"
+            },
+            "functionSelector": "183fb413",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initialize",
+            "nameLocation": "1776:10:27",
+            "parameters": {
+              "id": 43511,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 43495,
+                  "mutability": "mutable",
+                  "name": "pool",
+                  "nameLocation": "1798:4:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43513,
+                  "src": "1792:10:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IPool_$44153",
+                    "typeString": "contract IPool"
+                  },
+                  "typeName": {
+                    "id": 43494,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 43493,
+                      "name": "IPool",
+                      "nameLocations": [
+                        "1792:5:27"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 44153,
+                      "src": "1792:5:27"
+                    },
+                    "referencedDeclaration": 44153,
+                    "src": "1792:5:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IPool_$44153",
+                      "typeString": "contract IPool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43497,
+                  "mutability": "mutable",
+                  "name": "treasury",
+                  "nameLocation": "1816:8:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43513,
+                  "src": "1808:16:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 43496,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1808:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43499,
+                  "mutability": "mutable",
+                  "name": "underlyingAsset",
+                  "nameLocation": "1838:15:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43513,
+                  "src": "1830:23:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 43498,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1830:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43502,
+                  "mutability": "mutable",
+                  "name": "incentivesController",
+                  "nameLocation": "1885:20:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43513,
+                  "src": "1859:46:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IAaveIncentivesController_$43465",
+                    "typeString": "contract IAaveIncentivesController"
+                  },
+                  "typeName": {
+                    "id": 43501,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 43500,
+                      "name": "IAaveIncentivesController",
+                      "nameLocations": [
+                        "1859:25:27"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 43465,
+                      "src": "1859:25:27"
+                    },
+                    "referencedDeclaration": 43465,
+                    "src": "1859:25:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IAaveIncentivesController_$43465",
+                      "typeString": "contract IAaveIncentivesController"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43504,
+                  "mutability": "mutable",
+                  "name": "aTokenDecimals",
+                  "nameLocation": "1917:14:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43513,
+                  "src": "1911:20:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 43503,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1911:5:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43506,
+                  "mutability": "mutable",
+                  "name": "aTokenName",
+                  "nameLocation": "1953:10:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43513,
+                  "src": "1937:26:27",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 43505,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1937:6:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43508,
+                  "mutability": "mutable",
+                  "name": "aTokenSymbol",
+                  "nameLocation": "1985:12:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43513,
+                  "src": "1969:28:27",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 43507,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1969:6:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43510,
+                  "mutability": "mutable",
+                  "name": "params",
+                  "nameLocation": "2018:6:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43513,
+                  "src": "2003:21:27",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 43509,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2003:5:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1786:242:27"
+            },
+            "returnParameters": {
+              "id": 43512,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2037:0:27"
+            },
+            "scope": 43514,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IInitializableAToken",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 43472,
+          "nodeType": "StructuredDocumentation",
+          "src": "173:113:27",
+          "text": " @title IInitializableAToken\n @author Aave\n @notice Interface for the initialize function on AToken"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          43514
+        ],
+        "name": "IInitializableAToken",
+        "nameLocation": "297:20:27",
+        "scope": 43515,
+        "usedErrors": [],
+        "usedEvents": [
+          43491
+        ]
+      }
+    ],
+    "license": "AGPL-3.0"
+  },
+  "id": 27
+}

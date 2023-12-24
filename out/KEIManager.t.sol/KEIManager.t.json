@@ -1,0 +1,33 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "src/tests/KEIManager.t.sol",
+    "id": 46310,
+    "exportedSymbols": {},
+    "nodeType": "SourceUnit",
+    "src": "0:3563:45",
+    "nodes": [
+      {
+        "id": 46309,
+        "nodeType": "PragmaDirective",
+        "src": "0:23:45",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      }
+    ]
+  },
+  "id": 45
+}

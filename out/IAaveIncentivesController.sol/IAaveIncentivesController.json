@@ -1,0 +1,292 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalSupply",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "userBalance",
+          "type": "uint256"
+        }
+      ],
+      "name": "handleAction",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "handleAction(address,uint256,uint256)": "31873e2e"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"totalSupply\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"userBalance\",\"type\":\"uint256\"}],\"name\":\"handleAction\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Aave\",\"details\":\"It only contains one single function, needed as a hook on aToken and debtToken transfers.\",\"kind\":\"dev\",\"methods\":{\"handleAction(address,uint256,uint256)\":{\"details\":\"Called by the corresponding asset on transfer hook in order to update the rewards distribution.The units of `totalSupply` and `userBalance` should be the same.\",\"params\":{\"totalSupply\":\"The total supply of the asset prior to user balance change\",\"user\":\"The address of the user whose asset balance has changed\",\"userBalance\":\"The previous user balance prior to balance change\"}}},\"title\":\"IAaveIncentivesController\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Defines the basic interface for an Aave Incentives Controller.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/Aave/IAaveIncentivesController.sol\":\"IAaveIncentivesController\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/solmate/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":solmate/=lib/solmate/src/\"]},\"sources\":{\"src/interfaces/Aave/IAaveIncentivesController.sol\":{\"keccak256\":\"0x039d08a0169fbf7360cfdd314d5721c2c65c4434a873f4ba7831bb21c7cd5a55\",\"license\":\"AGPL-3.0\",\"urls\":[\"bzz-raw://f24f42e764dbd6dd89132724b0ebf99af468cbf671f64bcafc0d6ee8b68cbcad\",\"dweb:/ipfs/QmVmd6Pa2ah8tL4gmgmwcUeZ6L3VtqwTtecW7xUxMTZL2s\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "user",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalSupply",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "userBalance",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "handleAction"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "handleAction(address,uint256,uint256)": {
+            "details": "Called by the corresponding asset on transfer hook in order to update the rewards distribution.The units of `totalSupply` and `userBalance` should be the same.",
+            "params": {
+              "totalSupply": "The total supply of the asset prior to user balance change",
+              "user": "The address of the user whose asset balance has changed",
+              "userBalance": "The previous user balance prior to balance change"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/solmate/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "solmate/=lib/solmate/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/interfaces/Aave/IAaveIncentivesController.sol": "IAaveIncentivesController"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/interfaces/Aave/IAaveIncentivesController.sol": {
+        "keccak256": "0x039d08a0169fbf7360cfdd314d5721c2c65c4434a873f4ba7831bb21c7cd5a55",
+        "urls": [
+          "bzz-raw://f24f42e764dbd6dd89132724b0ebf99af468cbf671f64bcafc0d6ee8b68cbcad",
+          "dweb:/ipfs/QmVmd6Pa2ah8tL4gmgmwcUeZ6L3VtqwTtecW7xUxMTZL2s"
+        ],
+        "license": "AGPL-3.0"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/Aave/IAaveIncentivesController.sol",
+    "id": 43466,
+    "exportedSymbols": {
+      "IAaveIncentivesController": [
+        43465
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "37:809:26",
+    "nodes": [
+      {
+        "id": 43453,
+        "nodeType": "PragmaDirective",
+        "src": "37:23:26",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 43465,
+        "nodeType": "ContractDefinition",
+        "src": "294:552:26",
+        "nodes": [
+          {
+            "id": 43464,
+            "nodeType": "FunctionDefinition",
+            "src": "757:87:26",
+            "nodes": [],
+            "documentation": {
+              "id": 43455,
+              "nodeType": "StructuredDocumentation",
+              "src": "334:420:26",
+              "text": " @dev Called by the corresponding asset on transfer hook in order to update the rewards distribution.\n @dev The units of `totalSupply` and `userBalance` should be the same.\n @param user The address of the user whose asset balance has changed\n @param totalSupply The total supply of the asset prior to user balance change\n @param userBalance The previous user balance prior to balance change"
+            },
+            "functionSelector": "31873e2e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "handleAction",
+            "nameLocation": "766:12:26",
+            "parameters": {
+              "id": 43462,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 43457,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "787:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43464,
+                  "src": "779:12:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 43456,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "779:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43459,
+                  "mutability": "mutable",
+                  "name": "totalSupply",
+                  "nameLocation": "801:11:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43464,
+                  "src": "793:19:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 43458,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "793:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43461,
+                  "mutability": "mutable",
+                  "name": "userBalance",
+                  "nameLocation": "822:11:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43464,
+                  "src": "814:19:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 43460,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "814:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "778:56:26"
+            },
+            "returnParameters": {
+              "id": 43463,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "843:0:26"
+            },
+            "scope": 43465,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IAaveIncentivesController",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 43454,
+          "nodeType": "StructuredDocumentation",
+          "src": "62:231:26",
+          "text": " @title IAaveIncentivesController\n @author Aave\n @notice Defines the basic interface for an Aave Incentives Controller.\n @dev It only contains one single function, needed as a hook on aToken and debtToken transfers."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          43465
+        ],
+        "name": "IAaveIncentivesController",
+        "nameLocation": "304:25:26",
+        "scope": 43466,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "AGPL-3.0"
+  },
+  "id": 26
+}

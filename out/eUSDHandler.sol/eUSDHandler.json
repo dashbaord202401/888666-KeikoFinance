@@ -1,0 +1,33 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "src/yieldhandlers/eUSDHandler.sol",
+    "id": 46659,
+    "exportedSymbols": {},
+    "nodeType": "SourceUnit",
+    "src": "0:23:50",
+    "nodes": [
+      {
+        "id": 46658,
+        "nodeType": "PragmaDirective",
+        "src": "0:23:50",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      }
+    ]
+  },
+  "id": 50
+}

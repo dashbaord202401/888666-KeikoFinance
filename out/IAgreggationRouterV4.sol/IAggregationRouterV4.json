@@ -1,0 +1,863 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IAggregationExecutor",
+          "name": "caller",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "contract ERC20",
+              "name": "srcToken",
+              "type": "address"
+            },
+            {
+              "internalType": "contract ERC20",
+              "name": "dstToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address payable",
+              "name": "srcReceiver",
+              "type": "address"
+            },
+            {
+              "internalType": "address payable",
+              "name": "dstReceiver",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "minReturnAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "flags",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "permit",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct SwapDescription",
+          "name": "desc",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "swap",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "returnAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "gasLeft",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "swap(address,(address,address,address,address,uint256,uint256,uint256,bytes),bytes)": "7c025200"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IAggregationExecutor\",\"name\":\"caller\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"contract ERC20\",\"name\":\"srcToken\",\"type\":\"address\"},{\"internalType\":\"contract ERC20\",\"name\":\"dstToken\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"srcReceiver\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"dstReceiver\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"minReturnAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"flags\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"permit\",\"type\":\"bytes\"}],\"internalType\":\"struct SwapDescription\",\"name\":\"desc\",\"type\":\"tuple\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"swap\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"returnAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"gasLeft\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/IAgreggationRouterV4.sol\":\"IAggregationRouterV4\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/solmate/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":solmate/=lib/solmate/src/\"]},\"sources\":{\"lib/solmate/src/tokens/ERC20.sol\":{\"keccak256\":\"0xcdfd8db76b2a3415620e4d18cc5545f3d50de792dbf2c3dd5adb40cbe6f94b10\",\"license\":\"AGPL-3.0-only\",\"urls\":[\"bzz-raw://57b3ab70cde374af1cf2c9888636e8de6cf660f087b1c9abd805e9271e19fa35\",\"dweb:/ipfs/QmNrLDBAHYFjpjSd12jerm1AdBkDqEYUUaXgnT854BUZ97\"]},\"src/interfaces/IAgreggationRouterV4.sol\":{\"keccak256\":\"0x5a3d9446d363fc0f3baa64715214ef0f87ecdb199b41291588daf3ea6ff28cd0\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://ad10cb5248c2b2b844f82f4af78378d607aaf7542234a1ea76ad25a842873b17\",\"dweb:/ipfs/QmTrk8CkRjQRttAB3mmu99RXsPh2wY1ypowLw6DnEYeGpB\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract IAggregationExecutor",
+              "name": "caller",
+              "type": "address"
+            },
+            {
+              "internalType": "struct SwapDescription",
+              "name": "desc",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "contract ERC20",
+                  "name": "srcToken",
+                  "type": "address"
+                },
+                {
+                  "internalType": "contract ERC20",
+                  "name": "dstToken",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address payable",
+                  "name": "srcReceiver",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address payable",
+                  "name": "dstReceiver",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "minReturnAmount",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "flags",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "permit",
+                  "type": "bytes"
+                }
+              ]
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "swap",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "returnAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "gasLeft",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/solmate/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "solmate/=lib/solmate/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/interfaces/IAgreggationRouterV4.sol": "IAggregationRouterV4"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/solmate/src/tokens/ERC20.sol": {
+        "keccak256": "0xcdfd8db76b2a3415620e4d18cc5545f3d50de792dbf2c3dd5adb40cbe6f94b10",
+        "urls": [
+          "bzz-raw://57b3ab70cde374af1cf2c9888636e8de6cf660f087b1c9abd805e9271e19fa35",
+          "dweb:/ipfs/QmNrLDBAHYFjpjSd12jerm1AdBkDqEYUUaXgnT854BUZ97"
+        ],
+        "license": "AGPL-3.0-only"
+      },
+      "src/interfaces/IAgreggationRouterV4.sol": {
+        "keccak256": "0x5a3d9446d363fc0f3baa64715214ef0f87ecdb199b41291588daf3ea6ff28cd0",
+        "urls": [
+          "bzz-raw://ad10cb5248c2b2b844f82f4af78378d607aaf7542234a1ea76ad25a842873b17",
+          "dweb:/ipfs/QmTrk8CkRjQRttAB3mmu99RXsPh2wY1ypowLw6DnEYeGpB"
+        ],
+        "license": "GPL-3.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/IAgreggationRouterV4.sol",
+    "id": 48837,
+    "exportedSymbols": {
+      "ERC20": [
+        43330
+      ],
+      "IAggregationExecutor": [
+        48820
+      ],
+      "IAggregationRouterV4": [
+        48836
+      ],
+      "SwapDescription": [
+        48811
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:881:28",
+    "nodes": [
+      {
+        "id": 48789,
+        "nodeType": "PragmaDirective",
+        "src": "45:23:28",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 48791,
+        "nodeType": "ImportDirective",
+        "src": "70:47:28",
+        "nodes": [],
+        "absolutePath": "lib/solmate/src/tokens/ERC20.sol",
+        "file": "solmate/tokens/ERC20.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 48837,
+        "sourceUnit": 43331,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 48790,
+              "name": "ERC20",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 43330,
+              "src": "78:5:28",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 48811,
+        "nodeType": "StructDefinition",
+        "src": "173:353:28",
+        "nodes": [],
+        "canonicalName": "SwapDescription",
+        "documentation": {
+          "id": 48792,
+          "nodeType": "StructuredDocumentation",
+          "src": "119:53:28",
+          "text": "@dev Struct to store information one inch swaps"
+        },
+        "members": [
+          {
+            "constant": false,
+            "id": 48795,
+            "mutability": "mutable",
+            "name": "srcToken",
+            "nameLocation": "208:8:28",
+            "nodeType": "VariableDeclaration",
+            "scope": 48811,
+            "src": "202:14:28",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_ERC20_$43330",
+              "typeString": "contract ERC20"
+            },
+            "typeName": {
+              "id": 48794,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 48793,
+                "name": "ERC20",
+                "nameLocations": [
+                  "202:5:28"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 43330,
+                "src": "202:5:28"
+              },
+              "referencedDeclaration": 43330,
+              "src": "202:5:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC20_$43330",
+                "typeString": "contract ERC20"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 48798,
+            "mutability": "mutable",
+            "name": "dstToken",
+            "nameLocation": "267:8:28",
+            "nodeType": "VariableDeclaration",
+            "scope": 48811,
+            "src": "261:14:28",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_ERC20_$43330",
+              "typeString": "contract ERC20"
+            },
+            "typeName": {
+              "id": 48797,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 48796,
+                "name": "ERC20",
+                "nameLocations": [
+                  "261:5:28"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 43330,
+                "src": "261:5:28"
+              },
+              "referencedDeclaration": 43330,
+              "src": "261:5:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC20_$43330",
+                "typeString": "contract ERC20"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 48800,
+            "mutability": "mutable",
+            "name": "srcReceiver",
+            "nameLocation": "335:11:28",
+            "nodeType": "VariableDeclaration",
+            "scope": 48811,
+            "src": "319:27:28",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address_payable",
+              "typeString": "address payable"
+            },
+            "typeName": {
+              "id": 48799,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "319:15:28",
+              "stateMutability": "payable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 48802,
+            "mutability": "mutable",
+            "name": "dstReceiver",
+            "nameLocation": "368:11:28",
+            "nodeType": "VariableDeclaration",
+            "scope": 48811,
+            "src": "352:27:28",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address_payable",
+              "typeString": "address payable"
+            },
+            "typeName": {
+              "id": 48801,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "352:15:28",
+              "stateMutability": "payable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 48804,
+            "mutability": "mutable",
+            "name": "amount",
+            "nameLocation": "451:6:28",
+            "nodeType": "VariableDeclaration",
+            "scope": 48811,
+            "src": "443:14:28",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 48803,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "443:7:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 48806,
+            "mutability": "mutable",
+            "name": "minReturnAmount",
+            "nameLocation": "471:15:28",
+            "nodeType": "VariableDeclaration",
+            "scope": 48811,
+            "src": "463:23:28",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 48805,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "463:7:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 48808,
+            "mutability": "mutable",
+            "name": "flags",
+            "nameLocation": "500:5:28",
+            "nodeType": "VariableDeclaration",
+            "scope": 48811,
+            "src": "492:13:28",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 48807,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "492:7:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 48810,
+            "mutability": "mutable",
+            "name": "permit",
+            "nameLocation": "517:6:28",
+            "nodeType": "VariableDeclaration",
+            "scope": 48811,
+            "src": "511:12:28",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes_storage_ptr",
+              "typeString": "bytes"
+            },
+            "typeName": {
+              "id": 48809,
+              "name": "bytes",
+              "nodeType": "ElementaryTypeName",
+              "src": "511:5:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes_storage_ptr",
+                "typeString": "bytes"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "SwapDescription",
+        "nameLocation": "180:15:28",
+        "scope": 48837,
+        "visibility": "public"
+      },
+      {
+        "id": 48820,
+        "nodeType": "ContractDefinition",
+        "src": "588:115:28",
+        "nodes": [
+          {
+            "id": 48819,
+            "nodeType": "FunctionDefinition",
+            "src": "625:76:28",
+            "nodes": [],
+            "functionSelector": "2636f7f8",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "callBytes",
+            "nameLocation": "634:9:28",
+            "parameters": {
+              "id": 48817,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48814,
+                  "mutability": "mutable",
+                  "name": "msgSender",
+                  "nameLocation": "652:9:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48819,
+                  "src": "644:17:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 48813,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "644:7:28",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48816,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "678:4:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48819,
+                  "src": "663:19:28",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 48815,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "663:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "643:40:28"
+            },
+            "returnParameters": {
+              "id": 48818,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "700:0:28"
+            },
+            "scope": 48820,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IAggregationExecutor",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 48812,
+          "nodeType": "StructuredDocumentation",
+          "src": "528:60:28",
+          "text": "@title Interface for making arbitrary calls during swap"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          48820
+        ],
+        "name": "IAggregationExecutor",
+        "nameLocation": "598:20:28",
+        "scope": 48837,
+        "usedErrors": [],
+        "usedEvents": []
+      },
+      {
+        "id": 48836,
+        "nodeType": "ContractDefinition",
+        "src": "705:221:28",
+        "nodes": [
+          {
+            "id": 48835,
+            "nodeType": "FunctionDefinition",
+            "src": "742:182:28",
+            "nodes": [],
+            "functionSelector": "7c025200",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "swap",
+            "nameLocation": "751:4:28",
+            "parameters": {
+              "id": 48829,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48823,
+                  "mutability": "mutable",
+                  "name": "caller",
+                  "nameLocation": "786:6:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48835,
+                  "src": "765:27:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IAggregationExecutor_$48820",
+                    "typeString": "contract IAggregationExecutor"
+                  },
+                  "typeName": {
+                    "id": 48822,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 48821,
+                      "name": "IAggregationExecutor",
+                      "nameLocations": [
+                        "765:20:28"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48820,
+                      "src": "765:20:28"
+                    },
+                    "referencedDeclaration": 48820,
+                    "src": "765:20:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IAggregationExecutor_$48820",
+                      "typeString": "contract IAggregationExecutor"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48826,
+                  "mutability": "mutable",
+                  "name": "desc",
+                  "nameLocation": "827:4:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48835,
+                  "src": "802:29:28",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_SwapDescription_$48811_calldata_ptr",
+                    "typeString": "struct SwapDescription"
+                  },
+                  "typeName": {
+                    "id": 48825,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 48824,
+                      "name": "SwapDescription",
+                      "nameLocations": [
+                        "802:15:28"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48811,
+                      "src": "802:15:28"
+                    },
+                    "referencedDeclaration": 48811,
+                    "src": "802:15:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_SwapDescription_$48811_storage_ptr",
+                      "typeString": "struct SwapDescription"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48828,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "856:4:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48835,
+                  "src": "841:19:28",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 48827,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "841:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "755:111:28"
+            },
+            "returnParameters": {
+              "id": 48834,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48831,
+                  "mutability": "mutable",
+                  "name": "returnAmount",
+                  "nameLocation": "893:12:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48835,
+                  "src": "885:20:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 48830,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "885:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48833,
+                  "mutability": "mutable",
+                  "name": "gasLeft",
+                  "nameLocation": "915:7:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48835,
+                  "src": "907:15:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 48832,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "907:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "884:39:28"
+            },
+            "scope": 48836,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IAggregationRouterV4",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          48836
+        ],
+        "name": "IAggregationRouterV4",
+        "nameLocation": "715:20:28",
+        "scope": 48837,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "GPL-3.0-or-later"
+  },
+  "id": 28
+}

@@ -1,0 +1,194 @@
+:root {
+  --onboard-black: black;
+}
+
+body, html {
+  margin: 0;
+  font-family: 'JetBrains Mono', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+
+}
+
+.container {
+  width: 80%;
+  height: 80%;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+}
+
+.title {
+  font-size: 4em;
+  margin: 15% 0 0.1em 0;
+}
+
+.description {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  flex-wrap: wrap; /* Buttons will wrap to the next line if space is limited */
+}
+
+.icon-img {
+  height: 40px;
+  width: 40px;
+  border: 3px solid black;
+  border-radius: 22px;
+}
+
+.navbar-icon-img {
+  height: 60px;
+  width: 60px;
+}
+
+.button {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid #999;
+  color: #454545;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  padding: 15px 32px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.separator {
+  width: 90%; /* Matches the width of buttons/links for alignment */
+  border-top: 1px solid grey; /* Defines the color and thickness of the separator */
+  margin: 15px 0; /* Provides spacing above and below the separator */
+}
+
+/* NAV BAR */
+.navbar {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.navbar-logo {
+  height: 60px;
+  margin-right: 10%;
+}
+
+.nav-center {
+  display: flexbox;
+  gap: 30px;
+  flex-wrap: wrap; /* Links will wrap to the next line if space is limited */
+  padding: 10px;
+  margin-left: 8%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+  margin: 0 10px; /* Give some space between each navbar item */
+}
+
+.navbar a.launch-app-btn {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+  margin: 0 10px; /* Give some space between each navbar item */
+  margin-left: 5%;
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+}
+
+.launch-app-btn {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid #999;
+  color: #454545;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.launch-app-btn:hover {
+  background-color: #999;
+}
+
+.downnavbar {
+  display: flexbox;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-right: 3%;
+}
+
+.downnav-center {
+  display: flexbox;
+  gap: 30px;
+  flex-wrap: wrap; /* Links will wrap to the next line if space is limited */
+  padding: 10px;
+}
+
+.downnavbar a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+  margin: 0 10px; /* Give some space between each navbar item */
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) { /* Adjust for tablets and below */
+  .navbar {
+      flex-direction: column;
+  }
+
+  .navbar .nav-center {
+      margin-top: 10px;
+  }
+
+  .title {
+      font-size: 2.5em;
+  }
+
+  .description {
+      font-size: 1.2em;
+  }
+
+  .button {
+      font-size: 14px;
+      padding: 10px 24px;
+  }
+}
+
+@media (max-width: 480px) { /* Adjust for mobile screens */
+  .navbar-logo {
+      height: 40px;
+  }
+
+  .navbar .nav-center {
+      gap: 15px;
+  }
+
+  .buttons {
+      gap: 0.5em;
+  }
+}

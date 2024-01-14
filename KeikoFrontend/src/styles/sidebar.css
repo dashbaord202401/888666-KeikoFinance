@@ -1,0 +1,376 @@
+:root {
+    --onboard-black: black;
+    --onboard-font-size-1: 3rem;
+    --onboard-font-size-2: 2.25rem;
+    --onboard-font-size-3: 1.5rem;
+    --onboard-font-size-4: 1.25rem;
+    --onboard-font-size-5: 1rem;
+    --onboard-font-size-6: 0.875rem;
+    --onboard-font-size-7: 0.75rem;
+
+}
+
+body, html {
+    font-family: 'JetBrains Mono', Arial, sans-serif;
+}
+
+h2 {
+    font-family: 'Londrina Outline', sans-serif;
+}
+
+
+.sidebar {
+    position: relative;
+    left: 0;  /* Moved to the left side */
+    top: 0;
+    width: 15%;
+    height: 89vh;
+    background-color: white;
+    border-right: 1px solid black;  /* Adjusted border side */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+    overflow-x: hidden;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.sidebar-title {
+    font-size: 2em;
+    margin-bottom: -10px;
+    margin-top: -3px;
+}
+
+.sidebar-link, .sidebar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Centering the text */
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+.sidebar-link:hover, .sidebar-btn:hover {
+    background-color: lightgrey;
+}
+
+.link-icon, .btn-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.social-media {
+    bottom: 1rem; /* This will position it 1rem from the bottom of the sidebar */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjusts the positioning for perfect centering */
+    justify-content: center;
+    gap: 1rem; /* Flexible gap size */
+    height: 13%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon {
+    width: 1rem; /* Base size */
+    height: 1rem; /* Base size */
+}
+
+.sidebar-btn {
+    cursor: pointer;
+}
+
+.separator {
+    width: 100%; /* Matches the width of buttons/links for alignment */
+    border-top: 1px solid grey; /* Defines the color and thickness of the separator */
+    margin: 15px 0; /* Provides spacing above and below the separator */
+}
+
+.shake-effect:active {
+    display: inline-block;  /* Required for transform to work */
+    border: 1px solid red;
+    animation: shake 0.1s linear 20;  /* Apply the shake animation */
+}
+
+/* MAIN CONTENT */
+/* MAIN CONTENT */
+/* MAIN CONTENT */
+
+.dashboard-content {
+    position: absolute;
+    top: 1%;
+    left: 20%;
+    right: 1%;
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: #fff;
+    height: 94.5%;
+    border-radius: 15px;
+}
+
+.dashboard {
+    font-size: 2rem;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px; /* Spacing between buttons */
+    margin-bottom: 15px; /* Spacing between the buttons and the main box */
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 50%;
+}
+.action-buttonss {
+    display: flex;
+    gap: 15px; /* Spacing between buttons */
+    margin-bottom: 15px; /* Spacing between the buttons and the main box */
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 50%;
+}
+
+.action-btn {
+    /* Styling for Deposit, Withdraw, and Claim buttons */
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.mint-box {
+    width: 56%;
+    height: 60%; /* Adjusting for the button height and margin */
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-left: 2%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    padding: 15px;  /* Add padding inside the box */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    
+}
+
+.main-box {
+    width: 56%;
+    height: calc(49.33% - 40px); /* Adjusting for the button height and margin */
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-left: 2%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    padding: 15px;  /* Add padding inside the box */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    
+}
+
+.data-box {
+    position: absolute;
+    border: 1px solid black;
+    width: 30%;
+    height: 70%;
+    margin-bottom: 1%;
+    margin-left: 63%;
+    margin-right: 5%    ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+}
+
+.databox-title {
+    margin-top: 11px; /* Space between icon and title text */
+    margin-left: 16px;
+    font-size: 1.5em; /* Adjust as per your design */
+}
+
+.databox-separator {
+    width: 90%;
+}
+
+.databox-text {
+    margin-left: 20px;
+    margin-bottom: 7px;
+    display: inline-block;
+}
+
+.info-box {
+    width: 56%;
+    height: 22%; /* Adjusting for the button height and margin */
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 1.5%;
+    margin-left: 2%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    padding: 15px;  /* Add padding inside the box */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    font-size: 14px;
+    text-align: justify;
+    text-justify: inter-word;
+    cursor: pointer;
+    
+}
+
+.icon-img {
+    height: 40px;
+    width: 40px;
+    border: 3px solid black;
+    border-radius: 22px;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Vertically center the icon and text */
+}
+
+.title {
+    margin-left: 10px; /* Space between icon and title text */
+    font-size: 2em; /* Adjust as per your design */
+}
+
+.available {
+    margin-left: 7px;
+    margin-bottom: 10px; /* Space between available text and input bar */
+    font-size: 1.2em; /* Adjust as per your design */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    overflow: hidden;  /* Ensure children don't spill out */
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.input-bar {
+    width: 94%;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 45px;
+    padding-right: 60px;
+    font-size: 1.5em;
+}
+
+.max-btn {
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Adjust color as per your design */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;  /* Adjust as per your design */
+    position: absolute;
+    right: 10px;  /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 8px;  /* Center vertically */  /* Slightly transparent */
+}
+
+.max-btn, .deposit-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.max-btn:hover, .deposit-btn:hover {
+    background-color: lightgrey; /* Slightly darker shade for hover effect */
+}
+
+.deposit-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em; /* Adjust as per your design */
+    margin-bottom: 1%;
+}
+
+.deposit-btn:hover {
+    background-color: lightgrey; /* Darker shade for hover effect */
+}
+
+.main-box:hover {
+    box-shadow: 6px 12px 22px 4px rgba(0, 0, 0, 0.25);
+  }
+
+.connect-wallet {
+    position: absolute;
+    top: 3.5%;
+    right: 25px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    border-radius: 8px;
+}
+
+.connect-wallet:hover {
+    background-color: lightgrey;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .main-box {
+        width: 80%; /* Main box becomes narrower */
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0px); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(3px); }
+}
+
+@media (max-width: 600px) { /* For small screens */
+    .social-icon {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) { /* For medium screens */
+    .social-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media (min-width: 901px) { /* For large screens */
+    .social-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+}

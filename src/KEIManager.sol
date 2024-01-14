@@ -6,8 +6,6 @@ import {Owned} from "solmate/auth/Owned.sol";
 import "./KEI.sol";
 import "./ReserveController.sol";
 import "./YieldHandlerRegistry.sol";
-import "./yieldhandlers/USDCHandler.sol";
-import "./yieldhandlers/DAIHandler.sol";
 
 contract KEIManager is Owned {
 
@@ -54,23 +52,6 @@ contract KEIManager is Owned {
             addReserves(_token, _amount);
         }
     }
-
-    /*function burnAndRedeem(uint256 _amount, address _token) public {
-        require(reserveController.redemptionsAllowed() == true, "Redemptions disabled");
-        require(_token == address(KEIToken), "You cant redeem that token");
-
-        KEIToken.burn(msg.sender, _amount);
-
-        uint256 arrayLength = supportedStablecoins.length;
-        uint256[] memory redemptionAmounts = new uint256[](arrayLength);
-
-        redemptionAmounts = reserveController.calculateRedemtion(_amount, _token);
-
-        for (uint i = 0; i < supportedStablecoins.length; i++) {
-            ERC20(supportedStablecoins[i]).transfer(msg.sender, redemptionAmounts[i]);
-            removeReserves(supportedStablecoins[i], redemptionAmounts[i]);
-        }
-    }*/
 
     function depositReserves(address stablecoin, uint256 amount) external {
         address handlerAddress = registry.getYieldHandler(stablecoin);
